@@ -1,0 +1,28 @@
+{
+  "name": "allure-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio",
+    "allure": "npm run allure:build && npm run allure:serve",
+    "allure:build": "allure generate allure-results --clean",
+    "allure:serve": "allure open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^5.18.5",
+    "allure-commandline": "^2.13.0"
+  },
+  "devDependencies": {
+    "@wdio/allure-reporter": "^5.16.0",
+    "@wdio/local-runner": "^5.18.5",
+    "@wdio/mocha-framework": "^5.16.15",
+    "@wdio/spec-reporter": "^5.16.11",
+    "@wdio/sync": "^5.18.5",
+    "chromedriver": "^79.0.0",
+    "wdio-chromedriver-service": "^5.0.2"
+  }
+}
